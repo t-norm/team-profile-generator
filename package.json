@@ -1,0 +1,23 @@
+{
+  "name": "team-profile-generator",
+  "version": "1.0.0",
+  "description": "A Node.js application that will generate an HTML page for a dev team of managers, engineers, employees, and interns. ",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm run test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/t-norm/team-profile-generator.git"
+  },
+  "author": "t-norm",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/t-norm/team-profile-generator/issues"
+  },
+  "homepage": "https://github.com/t-norm/team-profile-generator#readme",
+  "dependencies": {
+    "inquirer": "^8.2.0",
+    "jest": "^27.3.1"
+  }
+}
