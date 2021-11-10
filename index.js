@@ -73,6 +73,7 @@ const promptManager = async () => {
     });
 };
 
+// prompt user for employee infomration and push appropriate role to employee array
 const promptEmployee = async () => {
     console.log(`
     =================
@@ -213,6 +214,7 @@ const promptEmployee = async () => {
     });
 };
 
+// prompt user if they want to add another engineer/intern or complete setup
 const newEmployeeConfirm = async () => {
     console.log(`
     ===================
@@ -238,5 +240,6 @@ const newEmployeeConfirm = async () => {
     });
 };
 
+//execute functions when index.js is ran and generate HTML
 promptManager()
     .then(promptEmployee);
