@@ -135,8 +135,8 @@ const promptEmployee = async () => {
                     type: 'input',
                     name: 'github',
                     message: "Enter engineer's Github username: ",
-                    validate: officeNumberInput => {
-                        if (officeNumberInput) {
+                    validate: githubUserInput => {
+                        if (githubUserInput) {
                         return true;
                         } else {
                         console.log("Please enter the engineer's Github name: ");
@@ -234,8 +234,9 @@ const newEmployeeConfirm = async () => {
         if (answer.anotherEmployee === 'Yes') {
             return promptEmployee();
         } else {
-            console.log('Team setup complete with infomration below:');
+            console.log('Team setup complete with information below:');
             console.log(employees);
+            return employees;
         };
     });
 };

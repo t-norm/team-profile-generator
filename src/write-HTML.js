@@ -12,6 +12,8 @@ const writeFile = fileContent => {
           ok: true,
           message: 'index.html successfully created'
         });
+        
+        console.log('index.html successfully created');
       });
     });
 };
