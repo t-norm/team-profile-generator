@@ -2,7 +2,7 @@ generateCard = employee => {
     switch (employee.constructor.name){
         case 'Manager':
             return `
-            <section class='card w-25 m-auto' style="filter:drop-shadow(1px 1px 5px black)">
+            <section class='card w-auto m-2' style="filter:drop-shadow(1px 1px 5px black)">
                 <div class='card-header list-group-item active'>
                     <h2 class='name'>${employee.name}</h2>
                     <h3 class='title'>
@@ -20,7 +20,7 @@ generateCard = employee => {
             `
         case 'Engineer':
             return `
-            <section class='card w-25 m-auto' style="filter:drop-shadow(1px 1px 5px black)">
+            <section class='card w-auto m-2' style="filter:drop-shadow(1px 1px 5px black)">
                 <div class='card-header list-group-item active'>
                     <h2 class='name'>${employee.name}</h2>
                     <h3 class='title'>
@@ -38,7 +38,7 @@ generateCard = employee => {
             `
         case 'Intern':
             return `
-            <section class='card w-25 m-auto' style="filter:drop-shadow(1px 1px 5px black)">
+            <section class='card w-auto m-2' style="filter:drop-shadow(1px 1px 5px black)">
                 <div class='card-header list-group-item active'>
                     <h2 class='name'>${employee.name}</h2>
                     <h3 class='title'>
@@ -58,10 +58,22 @@ generateCard = employee => {
 };
 
 module.exports = employees => {
-    let cardArray = [];
+    let managerArray = [];
+    let engineerArray = [];
+    let internArray = [];
     for (let i = 0; i < employees.length; i++) {
-        cardArray += generateCard(employees[i]);
-    }
+        switch (employees[i].constructor.name) {
+            case 'Manager':
+                managerArray += generateCard(employees[i]);
+                break;
+            case 'Engineer':
+                engineerArray += generateCard(employees[i]);
+                break;
+            case 'Intern':
+                internArray += generateCard(employees[i]);
+                break;
+        };
+    };
 return `<!DOCTYPE html>
 <html lang="en-US">
     <head>
@@ -80,8 +92,16 @@ return `<!DOCTYPE html>
         </header>
         
         <main>
-            <div class="d-flex flex-wrap">
-                ${cardArray}
+            <div class="d-flex flex-wrap justify-content-center mb-4">
+                ${managerArray}
+            </div>
+
+            <div class="d-flex flex-wrap justify-content-center mb-4">
+                ${engineerArray}
+            </div>
+
+            <div class="d-flex flex-wrap justify-content-center mb-4">
+                ${internArray}
             </div>
         </main>
     </body>
