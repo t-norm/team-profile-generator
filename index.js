@@ -242,4 +242,10 @@ const newEmployeeConfirm = async () => {
 
 //execute functions when index.js is ran and generate HTML
 promptManager()
-    .then(promptEmployee);
+    .then(promptEmployee)
+    .then(employees => {
+        return generatePage(employees);
+    })
+    .then(pageHTML => {
+        return writeFile(pageHTML);
+    });
