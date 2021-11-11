@@ -25,16 +25,23 @@ A Node.js command-line application built with npm inquirer and npm jest. The pur
 - [Questions](#questions)
 
 # Installation:
-TO BE UPDATED IN THE FUTURE
+1. Clone repository to your local machine using terminal/gitbash
+2. Node.js v16.13.0 or above: <a href="https://nodejs.org/en/download/" target="_blank">Download Node.js</a>
+3. Run command 'npm init' in terminal/gitbash
+4. Inquirer v8.2.0 or above: run command 'npm install inquirer' in terminal/gitbash
+5. Jest v27.3.1 or above: run command 'npm install --save-dev jest' in terminal/gitbash
+-- step 5 not neccessary for package to function, but is neccessary if you want to run tests --
 
 # Usage:
-TO BE UPDATED IN THE FUTURE
+1. In your terminal/gitbash run command 'index.js'
+2. Answer command prompts to generate your dev team's profile into an HTML.index file
 
 # Contribution:
 This project was made for educational purposes, feel free to contirbute/change a cloned version of this repo to your heart's content.
 
 # Tests:
-TO BE UPDATED IN THE FUTURE
+1. Requires Jest v27.3.1 or above: run command 'npm install --save-dev jest' in terminal/gitbash if not previously done.
+2. Run command 'npm run test' to run all tests located within '__tests__' folder
 
 # License:
 
