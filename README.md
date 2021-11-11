@@ -33,6 +33,7 @@ A Node.js command-line application built with npm inquirer and npm jest. The pur
 -- step 5 not neccessary for package to function, but is neccessary if you want to run tests --
 
 # Usage:
+Demo video: https://watch.screencastify.com/v/iXbv4PsGuOlh34PAIB0j
 1. In your terminal/gitbash run command 'index.js'
 2. Answer command prompts to generate your dev team's profile into an HTML.index file
 
