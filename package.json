@@ -1,10 +1,11 @@
 {
   "name": "team-profile-generator",
   "version": "1.0.0",
-  "description": "A Node.js application that will generate an HTML page for a dev team of managers, engineers, and interns. ",
+  "description": "A simple Node.js command line application made with Inquirer. This application will help a user create a fully styled HTML document for a development team consisting of managers, engineers, and interns.",
   "main": "index.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "start": "node index.js"
   },
   "repository": {
     "type": "git",

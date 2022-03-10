@@ -10,10 +10,10 @@ const writeFile = fileContent => {
   
         resolve({
           ok: true,
-          message: 'index.html successfully created'
+          message: 'HTML file successfully created'
         });
         
-        console.log('index.html successfully created');
+        console.log(`HTML file created in "dist" folder`);
       });
     });
 };
